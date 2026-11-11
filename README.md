@@ -1,5 +1,13 @@
 # Nemotron 3.5 Bolt on one DGX Spark
 
+## Run it
+
+```bash
+git clone https://github.com/sxuff/nemotron-3.5-bolt-gb10 && cd nemotron-3.5-bolt-gb10 && ./run.sh
+```
+
+Expected: **80.4 tok/s** greedy decode, single stream, 512 forced tokens (mean of code/prose/math/summary) — receipt: [`results.json`](results.json)
+
 The fastest single-GB10 recipe we measured for NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB (2-bit IQ2 GGUF): llama.cpp, the LiLiCorr drafter with 7 draft tokens, 262K context.
 
 ![Result card](assets/result-card.png)
